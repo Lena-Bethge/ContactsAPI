@@ -48,7 +48,7 @@ public class ContactOkHttpTests {
         OkHttpClient client = new OkHttpClient();
 
         AuthRequestDto requestDto = AuthRequestDto.builder()
-                .email("leegm.com")
+                .email("lee@gm.com")
                 .password("Lusy_987654").build();
 
         RequestBody requestBody = RequestBody.create(gson.toJson(requestDto),JSON);
@@ -70,13 +70,8 @@ public class ContactOkHttpTests {
             System.out.println(errorDto.getMessage());
         }
 
-
-        ErrorDto errorDto = gson.fromJson(responseJson,ErrorDto.class);
-        System.out.println(errorDto.getCode());
-        System.out.println(errorDto.getMessage());
-
     }
-
+// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImxlZUBnbS5jb20ifQ.LXJlATWJYiR3pHtQF7rS5BbVYvv35ClAKEsWwFyurpY
 
     @Test
     public void RegistrNegativeTestWithInvalidEmail() throws IOException {
