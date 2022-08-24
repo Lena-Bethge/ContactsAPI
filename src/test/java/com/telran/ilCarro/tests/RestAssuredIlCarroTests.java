@@ -25,7 +25,7 @@ public class RestAssuredIlCarroTests {
                 .email("miau@gmail.com")
                 .password("A_9876543Aa$")
                 .build();
-
+    String token = "THVzeTpBOTg3NjU0M0FhJA==";
         RegResponseDto responseDto = given()
                 .contentType("application/json")
                 .body(registrDto)
@@ -35,6 +35,7 @@ public class RestAssuredIlCarroTests {
                 .extract().response().as(RegResponseDto.class);
 
         System.out.println(responseDto.getToken());
+
 
     }
 
