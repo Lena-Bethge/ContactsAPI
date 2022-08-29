@@ -100,7 +100,7 @@ public class ContactAPITests {
 
 
     @Test
-    public void RegistrHttpNegativeTest() throws IOException {
+    public void registrHttpNegativeTest() throws IOException {
 
         RegistrRequestDto requestDto = RegistrRequestDto.builder()
                 .email("lee@gm.com")

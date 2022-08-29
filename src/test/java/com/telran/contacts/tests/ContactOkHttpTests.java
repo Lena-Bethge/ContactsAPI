@@ -74,7 +74,7 @@ public class ContactOkHttpTests {
 // eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImxlZUBnbS5jb20ifQ.LXJlATWJYiR3pHtQF7rS5BbVYvv35ClAKEsWwFyurpY
 
     @Test
-    public void RegistrNegativeTestWithInvalidEmail() throws IOException {
+    public void registrNegativeTestWithInvalidEmail() throws IOException {
 
         Gson gson = new Gson();
         OkHttpClient client = new OkHttpClient();

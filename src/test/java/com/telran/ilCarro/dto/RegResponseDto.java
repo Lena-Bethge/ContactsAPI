@@ -11,5 +11,5 @@ import lombok.*;
 
 public class RegResponseDto {
 
-    String token;
+    String registration_date;
 }

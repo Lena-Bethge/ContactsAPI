@@ -13,6 +13,5 @@ public class RegistrationDto {
 
     String first_name;
     String second_name;
-    String email;
-    String password;
+
 }
